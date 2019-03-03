@@ -330,3 +330,7 @@ footer {
     text-transform: uppercase; }
     .contact-form form input[type="submit"]:hover, header form input[type="submit"]:hover, footer form input[type="submit"]:hover {
       background: #EE7E03; }
+
+.responsive-logo {
+  height: auto;
+  width: 100%; }

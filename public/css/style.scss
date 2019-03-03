@@ -209,7 +209,7 @@ body {
         color: #fff;
         font-family: 'Nixie One';
         padding: 16px;
-        text-align: center     
+        text-align: center
       }
       background: #303030;
 
@@ -255,7 +255,7 @@ body {
 header {
   @extend .nav-links;
   @extend .contact-form;
-  width: 100%;  
+  width: 100%;
   position: fixed;
   z-index: 99;
   border-bottom: 10px solid $darkBlue;
@@ -410,7 +410,7 @@ footer {
       input[name="email"] {
         margin-bottom: 20px !important
       }
-    } 
+    }
   }
 }
 
@@ -461,4 +461,9 @@ footer {
       }
     }
   }
+}
+
+.responsive-logo {
+  height: auto;
+  width: 100%;
 }
