@@ -63,9 +63,9 @@ router.get('/tour', async (req, res) => {
     const socials = {
       twitter: results.siteSettings.twitter,
       instagram: results.siteSettings.instagram,
-      youtube: results.siteSettings.youtube,
-      apple: results.siteSettings.apple_music,
-      spotify: results.siteSettings.spotify,
+      // youtube: results.siteSettings.youtube,
+      // apple: results.siteSettings.apple_music,
+      // spotify: results.siteSettings.spotify,
       bandcamp: results.siteSettings.bandcamp
     }
     res.locals.socials = socials
@@ -95,9 +95,9 @@ router.get('/photo-gallery', (req, res) => {
       const socials = {
         twitter: results.siteSettings.twitter,
         instagram: results.siteSettings.instagram,
-        youtube: results.siteSettings.youtube,
-        apple: results.siteSettings.apple_music,
-        spotify: results.siteSettings.spotify,
+        // youtube: results.siteSettings.youtube,
+        // apple: results.siteSettings.apple_music,
+        // spotify: results.siteSettings.spotify,
         bandcamp: results.siteSettings.bandcamp
       }
       res.locals.socials = socials
@@ -178,9 +178,9 @@ router.get('/bio', (req, res) => {
     const socials = {
       twitter: results.siteSettings.twitter,
       instagram: results.siteSettings.instagram,
-      youtube: results.siteSettings.youtube,
-      apple: results.siteSettings.apple_music,
-      spotify: results.siteSettings.spotify,
+      // youtube: results.siteSettings.youtube,
+      // apple: results.siteSettings.apple_music,
+      // spotify: results.siteSettings.spotify,
       bandcamp: results.siteSettings.bandcamp
     }
     res.locals.socials = socials
