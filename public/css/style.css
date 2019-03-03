@@ -331,6 +331,17 @@ footer {
     .contact-form form input[type="submit"]:hover, header form input[type="submit"]:hover, footer form input[type="submit"]:hover {
       background: #EE7E03; }
 
-.responsive-logo {
-  height: auto;
-  width: 100%; }
+@media only screen and (max-width: 620px) {
+  .responsive-logo {
+    width: 392px;
+    height: auto; } }
+
+@media only screen and (max-width: 520px) {
+  .responsive-logo {
+    width: 292px;
+    height: auto; } }
+
+@media only screen and (max-width: 420px) {
+  .responsive-logo {
+    width: 192px;
+    height: auto; } }
