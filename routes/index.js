@@ -6,24 +6,24 @@ const _ = require('lodash')
 const axios = require('axios')
 const config = require('../config')
 const api = Cosmic()
-const bucket = api.bucket({ slug: config.bucket.slug })
+const bucket = api.bucket(config.bucket);
 
 router.get('/', (req, res) => {
   async.series({
     siteSettings(callback) {
       bucket.getObject({ slug: 'site-settings' }).then(response => {
         callback(null, response.object.metadata)
-      })
+      }).catch(err => console.log("Error: ", err));
     },
     homePage(callback) {
       bucket.getObject({ slug: 'home-page' }).then(response => {
         callback(null, response.object.metadata)
-      })
+      }).catch(err => console.log("Error: ", err))
     },
     tourDates(callback) {
       bucket.getObjects({ type: 'tour-dates' }).then(response => {
         callback(null, response.objects)
-      })
+      }).catch(err => console.log("Error: ", err))
     }
   }, (err, results) => {
     res.locals.settings = results.siteSettings
