@@ -27,3 +27,6 @@ You can easily manage the content in your Band Website on Cosmic JS.  Cosmic JS 
 3. Go to Your Bucket > Apps.
 4. Install the [Band Website](https://cosmicjs.com/apps/band-website).
 5. Deploy your Band website to the Cosmic App Server at Your Bucket > Web Hosting.  Your band mates will be impressed!
+
+### Scrubbing Images
+exiftool -all= foo.jpg
