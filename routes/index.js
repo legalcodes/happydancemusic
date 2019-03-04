@@ -31,10 +31,11 @@ router.get('/', (req, res) => {
     const socials = {
       twitter: results.siteSettings.twitter,
       instagram: results.siteSettings.instagram,
+      soundcloud: results.siteSettings.soundcloud
       // youtube: results.siteSettings.youtube,
       // apple: results.siteSettings.apple_music,
       // spotify: results.siteSettings.spotify,
-      bandcamp: results.siteSettings.bandcamp
+      // bandcamp: results.siteSettings.bandcamp
     }
     res.locals.socials = socials
     res.locals.tourDates = _.sortBy(results.tourDates, tourDate => (
@@ -63,10 +64,11 @@ router.get('/tour', async (req, res) => {
     const socials = {
       twitter: results.siteSettings.twitter,
       instagram: results.siteSettings.instagram,
+      soundcloud: results.siteSettings.soundcloud
       // youtube: results.siteSettings.youtube,
       // apple: results.siteSettings.apple_music,
       // spotify: results.siteSettings.spotify,
-      bandcamp: results.siteSettings.bandcamp
+      // bandcamp: results.siteSettings.bandcamp
     }
     res.locals.socials = socials
     res.locals.tourDates = _.sortBy(results.tourDates, tourDate => (
@@ -95,10 +97,11 @@ router.get('/photo-gallery', (req, res) => {
       const socials = {
         twitter: results.siteSettings.twitter,
         instagram: results.siteSettings.instagram,
+        soundcloud: results.siteSettings.soundcloud
         // youtube: results.siteSettings.youtube,
         // apple: results.siteSettings.apple_music,
         // spotify: results.siteSettings.spotify,
-        bandcamp: results.siteSettings.bandcamp
+        // bandcamp: results.siteSettings.bandcamp
       }
       res.locals.socials = socials
       res.locals.title = results.siteSettings.band_name + ' | Photo Gallery'
@@ -124,10 +127,11 @@ router.get('/photo-gallery/:slug', (req, res) => {
       const socials = {
         twitter: results.siteSettings.twitter,
         instagram: results.siteSettings.instagram,
+        soundcloud: results.siteSettings.soundcloud
         // youtube: results.siteSettings.youtube,
         // apple: results.siteSettings.apple_music,
         // spotify: results.siteSettings.spotify,
-        bandcamp: results.siteSettings.bandcamp
+        // bandcamp: results.siteSettings.bandcamp
       };
       res.locals.socials = socials;
       res.locals.title = results.siteSettings.band_name + ' | ' + results.album.title;
@@ -154,10 +158,11 @@ router.get('/videos', (req, res) => {
     const socials = {
       twitter: results.siteSettings.twitter,
       instagram: results.siteSettings.instagram,
+      soundcloud: results.siteSettings.soundcloud
       // youtube: results.siteSettings.youtube,
       // apple: results.siteSettings.apple_music,
       // spotify: results.siteSettings.spotify,
-      bandcamp: results.siteSettings.bandcamp
+      // bandcamp: results.siteSettings.bandcamp
     }
     res.locals.socials = socials
     res.locals.title = results.siteSettings.band_name + ' | Videos'
@@ -178,10 +183,11 @@ router.get('/bio', (req, res) => {
     const socials = {
       twitter: results.siteSettings.twitter,
       instagram: results.siteSettings.instagram,
+      soundcloud: results.siteSettings.soundcloud
       // youtube: results.siteSettings.youtube,
       // apple: results.siteSettings.apple_music,
       // spotify: results.siteSettings.spotify,
-      bandcamp: results.siteSettings.bandcamp
+      // bandcamp: results.siteSettings.bandcamp
     }
     res.locals.socials = socials
     res.locals.title = results.siteSettings.band_name + ' | Bio'
