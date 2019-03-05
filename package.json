@@ -22,22 +22,22 @@
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.1.0",
     "lodash": "^4.17.11",
-    "moment": "^2.18.1",
+    "moment": "^2.24.0",
     "morgan": "^1.9.1",
     "serve-favicon": "^2.5.0",
     "truncate-html": "^0.1.4"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.2.0",
     "debug": "^2.2.0",
-    "gulp": "^3.9.1",
-    "gulp-livereload": "^3.8.0",
+    "gulp": "^4.0.0",
+    "gulp-livereload": "^4.0.1",
     "gulp-nodemon": "^2.4.2",
-    "gulp-plumber": "^1.0.0",
-    "gulp-sass": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
     "mocha": "^6.0.2",
-    "nodemon": "^1.12.1",
-    "nyc": "^10.0.0",
-    "supertest": "^2.0.0"
+    "nodemon": "^1.18.10",
+    "nyc": "^13.3.0",
+    "supertest": "^3.4.2"
   }
 }
