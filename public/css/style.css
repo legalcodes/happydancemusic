@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("https://fonts.googleapis.com/css?family=Nixie+One");
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
 html {
   height: 100%; }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #212121;
   height: 100%; }
 
@@ -35,10 +35,10 @@ body {
         color: rgba(255, 255, 255, 0.7); }
         .body .tour-body-wrapper .tour-body .tour-container div:first-child h1 {
           color: #fff;
-          font-family: 'Nixie One';
+          font-family: "Anonymous Pro";
           text-shadow: 1px 1px #03adee; }
       .body .tour-body-wrapper .tour-body .tour-container a {
-        font-family: 'Nixie One';
+        font-family: "Anonymous Pro";
         border: 2px solid #fff;
         padding: 12px;
         white-space: nowrap; }
@@ -54,7 +54,7 @@ body {
     padding: 30px;
     text-align: center; }
     .body .album-wrapper h1 {
-      font-family: 'Nixie One';
+      font-family: "Anonymous Pro";
       color: #fff;
       text-shadow: 1px 1px #0175A1;
       font-size: 2rem; }
@@ -75,7 +75,7 @@ body {
         background: rgba(48, 48, 48, 0.9);
         padding: 30px;
         color: #fff;
-        font-family: 'Nixie One';
+        font-family: "Anonymous Pro";
         font-size: 1.6em;
         line-height: 1.6; }
   .body .videos-wrapper {
@@ -120,7 +120,7 @@ body {
           justify-content: center; } }
       .body .banner-image-container .cta a {
         text-align: center;
-        font-family: 'Nixie One', sans-serif;
+        font-family: "Anonymous Pro", sans-serif;
         font-weight: bold;
         text-transform: uppercase;
         font-size: 1.75rem;
@@ -155,7 +155,7 @@ body {
         background: #03adee;
         margin: 0;
         color: #fff;
-        font-family: 'Nixie One';
+        font-family: "Anonymous Pro";
         padding: 16px;
         text-align: center; }
       .body .content-wrapper .box > div {
@@ -164,7 +164,7 @@ body {
         color: #fff;
         font-size: 1.2rem;
         line-height: 1.7;
-        font-family: 'Nixie One'; }
+        font-family: "Anonymous Pro"; }
         .body .content-wrapper .box .bio a {
           display: block;
           text-align: right;
@@ -180,7 +180,7 @@ body {
         .body .content-wrapper .box .tour-date .ticket-button {
           text-align: right;
           margin-bottom: 20px;
-          font-family: 'Nixen One'; }
+          font-family: "Anonymous Pro"; }
         .body .content-wrapper .box .tour-date:not(:last-child) {
           margin-bottom: 30px; }
 

@@ -4,19 +4,18 @@ var gulp = require('gulp'),
   livereload = require('gulp-livereload'),
   sass = require('gulp-sass');
 
-gulp.task('sass', function () {
+// https://www.liquidlight.co.uk/blog/how-do-i-update-to-gulp-4/
+
+gulp.task('sass', function (done) {
   gulp.src('./public/css/*.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('./public/css'))
     .pipe(livereload());
+  done()
 });
 
-gulp.task('watch', function() {
-  gulp.watch('./public/css/*.scss', ['sass']);
-});
-
-gulp.task('develop', function () {
+gulp.task('develop', function (done) {
   livereload.listen();
   nodemon({
     script: 'bin/www',
@@ -31,10 +30,27 @@ gulp.task('develop', function () {
     this.stdout.pipe(process.stdout);
     this.stderr.pipe(process.stderr);
   });
+  done()
 });
 
-gulp.task('default', [
-  'sass',
-  'develop',
-  'watch'
-]);
+gulp.task('watch', function(done) {
+  gulp.watch('./public/css/*.scss', ['sass']);
+  done()
+});
+
+gulp.task('watch', function(){
+  gulp.watch('./public/css/*.scss')
+    .on('change', function(path, stats) {
+      console.log(path);
+      // code to execute on change
+    })
+    .on('unlink', function(path, stats) {
+      console.log(path);
+      // code to execute on delete
+    });
+});
+
+gulp.task('default', gulp.series(['sass', 'develop', 'watch'], function(done) {
+  done();
+  }
+));
