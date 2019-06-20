@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
+    "gulp-sass": "gulp sass",
     "test": "mocha --recursive test",
     "dev": "nodemon ./bin/www",
     "test:coverage": "nyc npm test",
