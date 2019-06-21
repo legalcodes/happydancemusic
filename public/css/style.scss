@@ -156,9 +156,38 @@ body {
     align-items: center;
     background: #fff;
 
-    .bars {
+    .chart {
+      height: 400px;
+      width: 50vw;
 
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      grid-template-rows: repeat(100, 1fr);
+      grid-column-gap: 5px;
     }
+
+    [class*="bar-a"] {
+      grid-row-start: 1;
+      grid-row-end: 101;
+      background-color: #000;
+    }
+
+    .bar-b1 {
+      grid-row: 1 / 33;
+      background-color: #000;
+    }
+
+    .bar-b2 {
+      grid-row: 53 / 101;
+      background-color: #000;
+    }
+
+    // [class*="bar-b"] {
+    //   grid-row-start: 101;
+    //   grid-row-end: 101;
+    //   background-color: #000;
+    // }
+
 
     .cta {
       user-select: none;

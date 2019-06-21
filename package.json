@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "gulp-dev": "gulp default",
-    "gulp-sass": "gulp sass",
+    "sass": "gulp sass && node ./bin/www",
     "test": "mocha --recursive test",
     "dev": "nodemon ./bin/www",
     "test:coverage": "nyc npm test",

@@ -109,6 +109,23 @@ body {
     justify-content: center;
     align-items: center;
     background: #fff; }
+    .body .banner-image-container .chart {
+      height: 400px;
+      width: 50vw;
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      grid-template-rows: repeat(100, 1fr);
+      grid-column-gap: 5px; }
+    .body .banner-image-container [class*="bar-a"] {
+      grid-row-start: 1;
+      grid-row-end: 101;
+      background-color: #000; }
+    .body .banner-image-container .bar-b1 {
+      grid-row: 1 / 33;
+      background-color: #000; }
+    .body .banner-image-container .bar-b2 {
+      grid-row: 53 / 101;
+      background-color: #000; }
     .body .banner-image-container .cta {
       user-select: none;
       display: flex;
