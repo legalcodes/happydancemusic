@@ -115,17 +115,31 @@ body {
       display: grid;
       grid-template-columns: repeat(11, 1fr);
       grid-template-rows: repeat(100, 1fr);
-      grid-column-gap: 5px; }
+      grid-column-gap: 14px; }
+    .body .banner-image-container [class*="bar"] {
+      background-color: #000; }
     .body .banner-image-container [class*="bar-a"] {
-      grid-row-start: 1;
-      grid-row-end: 101;
-      background-color: #000; }
-    .body .banner-image-container .bar-b1 {
-      grid-row: 1 / 33;
-      background-color: #000; }
+      grid-row: 1 / 101; }
+    .body .banner-image-container [class*="bar-b"] {
+      grid-row: 1 / 13; }
     .body .banner-image-container .bar-b2 {
-      grid-row: 53 / 101;
-      background-color: #000; }
+      grid-row: 50 / 101; }
+    .body .banner-image-container [class*="bar-c"] {
+      grid-row: 1 / 43; }
+    .body .banner-image-container .bar-c2 {
+      grid-row: 63 / 101; }
+    .body .banner-image-container [class*="bar-d"] {
+      grid-row: 1 / 60; }
+    .body .banner-image-container .bar-d2 {
+      grid-row: 90 / 101; }
+    .body .banner-image-container [class*="bar-e"] {
+      grid-row: 1 / 50; }
+    .body .banner-image-container .bar-e2 {
+      grid-row: 82 / 101; }
+    .body .banner-image-container [class*="bar-f"] {
+      grid-row: 1 / 40; }
+    .body .banner-image-container .bar-f2 {
+      grid-row: 60 / 101; }
     .body .banner-image-container .cta {
       user-select: none;
       display: flex;
