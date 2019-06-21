@@ -35,7 +35,7 @@ body {
         color: rgba(255, 255, 255, 0.7); }
         .body .tour-body-wrapper .tour-body .tour-container div:first-child h1 {
           color: #fff;
-          font-family: "Anonymous Pro";
+          fontgg-family: "Anonymous Pro";
           text-shadow: 1px 1px #03adee; }
       .body .tour-body-wrapper .tour-body .tour-container a {
         font-family: "Anonymous Pro";
@@ -107,7 +107,8 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    background: #fff; }
     .body .banner-image-container .cta {
       user-select: none;
       display: flex;

@@ -50,7 +50,7 @@ body {
         div:first-child {
           h1 {
             color: #fff;
-            font-family: $mono;
+            fontgg-family: $mono;
             text-shadow: 1px 1px $lightBlue
           }
           color: transparentize(#fff, 0.3)
@@ -154,6 +154,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #fff;
+
+    .bars {
+
+    }
 
     .cta {
       user-select: none;
