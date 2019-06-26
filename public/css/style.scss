@@ -163,24 +163,30 @@ body {
       display: grid;
       grid-template-columns: repeat(11, 1fr);
       grid-template-rows: repeat(100, 1fr);
-      grid-column-gap: 14px;
+      grid-column-gap: .75vw;
+
+      transition: all 1s;
+      
     }
 
     [class*="bar"] {
       background-color: #000;
+      transition: all 1s;
     }
 
-    [class*="bar-a"] { grid-row: 1 / 101; }
+    [class*="bar-a"] { grid-row: 1 / 101; transition: all 1s;}
+
+    .throbbed { grid-row: 10 / 101; }
     
-    [class*="bar-b"] { grid-row: 1 / 13; } .bar-b2 { grid-row: 50 / 101; }
+    .bar-b1 { grid-row: 1 / 13; } .bar-b2 { grid-row: 50 / 101; }
 
-    [class*="bar-c"] { grid-row: 1 / 43; } .bar-c2 {  grid-row: 63 / 101; }
+    .bar-c1 { grid-row: 1 / 43; } .bar-c2 {  grid-row: 63 / 101; }
 
-    [class*="bar-d"] { grid-row: 1 / 60; } .bar-d2 { grid-row: 90 / 101; }
+    .bar-d1 { grid-row: 1 / 60; } .bar-d2 { grid-row: 90 / 101; }
 
-    [class*="bar-e"] { grid-row: 1 / 50; } .bar-e2 { grid-row: 82 / 101; }
+    .bar-e1 { grid-row: 1 / 50; } .bar-e2 { grid-row: 82 / 101; }
 
-    [class*="bar-f"] { grid-row: 1 / 40; } .bar-f2 { grid-row: 60 / 101; }
+    .bar-f1 { grid-row: 1 / 40; } .bar-f2 { grid-row: 60 / 101; }
 
     // [class*="bar-b"] {
     //   grid-row-start: 101;
