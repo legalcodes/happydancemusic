@@ -14,30 +14,36 @@ html {
 
 body {
   font-family: $sans-serif, sans-serif;
-  background: #212121;
-  height: 100%
+  // background: #212121;
+  background: #fff;
+  height: 100%;
+  margin: 0;
 }
 
 .bold {
   font-weight: bold;
 }
 
-.body {
 
-  .banner-image-container {
+
+  .chart-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  
     width: 100%;
-    height: 400px;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
+    height: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     background: #fff;
 
     .chart {
-      height: 400px;
-      width: 50vw;
+
+      height: 90vh;
+      width: 80vw;
+
+
 
       display: grid;
       grid-template-columns: repeat(11, 1fr);
@@ -56,17 +62,11 @@ body {
     [class*="bar-a"] { grid-row: 1 / 101; transition: all 1s;}
     
     .bar-b1 { grid-row: 1 / 13; } .bar-b2 { grid-row: 50 / 101; }
-
     .bar-c1 { grid-row: 1 / 43; } .bar-c2 {  grid-row: 63 / 101; }
-
     .bar-d1 { grid-row: 1 / 60; } .bar-d2 { grid-row: 90 / 101; }
-
     .bar-e1 { grid-row: 1 / 50; } .bar-e2 { grid-row: 82 / 101; }
-
     .bar-f1 { grid-row: 1 / 40; } .bar-f2 { grid-row: 60 / 101; }
 }
-
-
 
 // @media only screen and (max-width: 620px) {
 //   .responsive-logo {
@@ -90,4 +90,3 @@ body {
 //   }
 // }
 
-}
