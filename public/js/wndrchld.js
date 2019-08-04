@@ -1,4 +1,3 @@
-console.log('----------> ' + 'BY THE POWER OF CHU');
 
 var a1 = document.getElementsByClassName("bar-a1");
 var b1 = document.getElementsByClassName("bar-b1");
@@ -14,6 +13,12 @@ var e2 = document.getElementsByClassName("bar-e2");
 var f2 = document.getElementsByClassName("bar-f2");
 
 var state = {};
+
+
+setTimeout(
+  () => document.querySelector('.chart').classList.toggle('chart--full'),
+  300
+)
 
 wobbleColumnTop(a1[0], 5)
 setTimeout(()=> wobbleColumnTop(b1[0], 5), 100);

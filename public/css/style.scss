@@ -41,17 +41,18 @@ body {
     .chart {
 
       height: 90vh;
-      width: 80vw;
-
-
+      width: 90vw;
 
       display: grid;
       grid-template-columns: repeat(11, 1fr);
       grid-template-rows: repeat(100, 1fr);
-      grid-column-gap: .75vw;
+      grid-column-gap: 10.5vw;
 
       transition: all 1s;
-      
+    }
+
+    .chart--full {
+      grid-column-gap: .30vw;
     }
 
     [class*="bar"] {
