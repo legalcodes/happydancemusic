@@ -33,18 +33,31 @@ body {
     grid-template-columns: repeat(12, 0.5fr);
     grid-template-rows: repeat(100, 1fr);
     grid-column-gap: 1vw;
-    transition: all 2.5s; }
+    transition: all 2.5s;
+    /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */ }
     .chart-container .chart-2 .social-icons {
       z-index: 5;
       position: absolute; }
     .chart-container .chart-2 .instagram-icon {
       grid-row: 20 / 36;
       grid-column: 4/4;
-      font-size: 12vw; }
+      font-size: 4vw; }
     .chart-container .chart-2 .soundcloud-icon {
       grid-row: 20 / 36;
       grid-column: 9/9;
-      font-size: 12vw; }
+      font-size: 4vw;
+      /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */ }
+    @media screen and (min-width: 601px) {
+      .chart-container .chart-2 .instagram-icon {
+        font-size: 4vw; }
+      .chart-container .chart-2 .soundcloud-icon {
+        font-size: 4vw; } }
+    @media screen and (max-width: 600px) {
+      .chart-container .chart-2 .instagram-icon {
+        font-size: 12vw; }
+      .chart-container .chart-2 .soundcloud-icon {
+        font-size: 12vw; } }
   .chart-container .chart {
     max-width: 1600px;
     position: absolute;

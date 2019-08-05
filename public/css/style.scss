@@ -58,12 +58,26 @@ body {
       position: absolute;
     }
     .instagram-icon { grid-row: 20 / 36; grid-column: 4/4; 
-      font-size: 12vw;
+      font-size: 4vw;
     }
 
     .soundcloud-icon { grid-row: 20 / 36; grid-column: 9/9; 
-      font-size: 12vw;
+      font-size: 4vw;
+      /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
     }
+
+
+      /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+      @media screen and (min-width: 601px) {
+        .instagram-icon { font-size: 4vw; }
+        .soundcloud-icon { font-size: 4vw; }
+      }
+
+      /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+      @media screen and (max-width: 600px) {
+        .instagram-icon { font-size: 12vw; }
+        .soundcloud-icon { font-size: 12vw; }
+      }
   }
 
   .chart {
