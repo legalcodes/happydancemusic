@@ -1,8 +1,8 @@
-window.onload = init
+// window.onload = init
 
-function init() {
+// function init() {
     // document.getElementById('dropdown-toggle').addEventListener('click', toggleDropdown)
-}
+// }
 
 // function toggleDropdown() {
 //     const mobileMenu = document.getElementsByClassName('mobile-menu')[0]

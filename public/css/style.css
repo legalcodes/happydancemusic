@@ -12,48 +12,75 @@ body {
 .bold {
   font-weight: bold; }
 
+.social-link {
+  color: white; }
+
 .chart-container {
   max-width: 1600px;
   margin: 0 auto;
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #fff; }
+  .chart-container .chart-2 {
+    max-width: 1600px;
+    position: absolute;
+    z-index: 5;
+    height: 90vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(12, 0.5fr);
+    grid-template-rows: repeat(100, 1fr);
+    grid-column-gap: 1vw;
+    transition: all 2.5s; }
+    .chart-container .chart-2 .social-icons {
+      z-index: 5;
+      position: absolute; }
+    .chart-container .chart-2 .instagram-icon {
+      grid-row: 20 / 36;
+      grid-column: 4/4;
+      font-size: 12vw; }
+    .chart-container .chart-2 .soundcloud-icon {
+      grid-row: 20 / 36;
+      grid-column: 9/9;
+      font-size: 12vw; }
   .chart-container .chart {
+    max-width: 1600px;
+    position: absolute;
+    z-index: 1;
     height: 90vh;
     width: 90vw;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(100, 1fr);
     grid-column-gap: 10.5vw;
-    transition: all 1s; }
+    transition: all 2.5s; }
+    .chart-container .chart [class*="bar"] {
+      background-color: #000;
+      transition: all 1s; }
+    .chart-container .chart [class*="bar-a"] {
+      grid-row: 1 / 101;
+      transition: all 1s; }
+    .chart-container .chart .bar-b1 {
+      grid-row: 1 / 13; }
+    .chart-container .chart .bar-b2 {
+      grid-row: 50 / 101; }
+    .chart-container .chart .bar-c1 {
+      grid-row: 1 / 43; }
+    .chart-container .chart .bar-c2 {
+      grid-row: 63 / 101; }
+    .chart-container .chart .bar-d1 {
+      grid-row: 1 / 60; }
+    .chart-container .chart .bar-d2 {
+      grid-row: 90 / 101; }
+    .chart-container .chart .bar-e1 {
+      grid-row: 1 / 50; }
+    .chart-container .chart .bar-e2 {
+      grid-row: 82 / 101; }
+    .chart-container .chart .bar-f1 {
+      grid-row: 1 / 40; }
+    .chart-container .chart .bar-f2 {
+      grid-row: 60 / 101; }
   .chart-container .chart--full {
     grid-column-gap: .30vw; }
-  .chart-container [class*="bar"] {
-    background-color: #000;
-    transition: all 1s; }
-  .chart-container [class*="bar-a"] {
-    grid-row: 1 / 101;
-    transition: all 1s; }
-  .chart-container .bar-b1 {
-    grid-row: 1 / 13; }
-  .chart-container .bar-b2 {
-    grid-row: 50 / 101; }
-  .chart-container .bar-c1 {
-    grid-row: 1 / 43; }
-  .chart-container .bar-c2 {
-    grid-row: 63 / 101; }
-  .chart-container .bar-d1 {
-    grid-row: 1 / 60; }
-  .chart-container .bar-d2 {
-    grid-row: 90 / 101; }
-  .chart-container .bar-e1 {
-    grid-row: 1 / 50; }
-  .chart-container .bar-e2 {
-    grid-row: 82 / 101; }
-  .chart-container .bar-f1 {
-    grid-row: 1 / 40; }
-  .chart-container .bar-f2 {
-    grid-row: 60 / 101; }

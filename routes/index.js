@@ -29,7 +29,7 @@ router.get('/', (req, res) => {
     res.locals.settings = results.siteSettings
     res.locals.homepage = results.homePage
     const socials = {
-      twitter: results.siteSettings.twitter,
+      // twitter: results.siteSettings.twitter,
       instagram: results.siteSettings.instagram,
       soundcloud: results.siteSettings.soundcloud
       // youtube: results.siteSettings.youtube,
@@ -62,7 +62,7 @@ router.get('/tour', async (req, res) => {
   }, (err, results) => {
     res.locals.settings = results.siteSettings
     const socials = {
-      twitter: results.siteSettings.twitter,
+      // twitter: results.siteSettings.twitter,
       instagram: results.siteSettings.instagram,
       soundcloud: results.siteSettings.soundcloud
       // youtube: results.siteSettings.youtube,
