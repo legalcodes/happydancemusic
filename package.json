@@ -20,7 +20,7 @@
     "cosmicjs": "^3.2.14",
     "express": "^4.13.3",
     "express-handlebars": "^3.0.0",
-    "handlebars": "^4.1.0",
+    "handlebars": "^4.3.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
