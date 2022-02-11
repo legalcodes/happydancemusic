@@ -19,7 +19,7 @@
     "cors": "^2.8.4",
     "cosmicjs": "^3.2.14",
     "express": "^4.13.3",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^5.3.1",
     "handlebars": "^4.1.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
